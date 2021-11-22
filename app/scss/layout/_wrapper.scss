@@ -1,0 +1,44 @@
+/*
+    ------------------------
+    ------- Wrapper --------
+    ------------------------
+*/
+
+.wrapper{
+    width: 100%;
+    height: inherit;
+    max-width: 1110px;
+    margin: 0 auto;
+    background-color: transparent;
+
+    // Display Inherit
+    display: inherit;
+
+    // Inherit Flexbox Properties
+    justify-content: inherit;
+    align-items: inherit;
+    flex-direction: inherit;
+    
+    // Inherit Grid Properties
+    grid-column: 1/-1;
+    grid-template-columns: inherit;
+    grid-template-rows: inherit;
+    grid-template-areas: inherit;
+    gap: inherit;
+    column-gap: inherit;
+    row-gap: inherit;
+
+    // Padding
+
+    padding: 0 var(--space-md);
+
+    @include breakpoint-up(medium){
+        padding: 0 5.38889rem;
+    }
+    @include breakpoint-up(large){
+        padding: 0 2rem;
+    }
+    @include breakpoint-up(xlarge){
+        padding: 0;
+    }
+}

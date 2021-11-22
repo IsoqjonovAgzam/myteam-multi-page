@@ -1,0 +1,162 @@
+/*
+    ------------------------
+    ----- Typography -------
+    ------------------------
+*/
+
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,400;0,600;0,700;1,500&display=swap');
+
+:root{
+
+    // Font Family
+    --ff-primary: 'Livvic', sans-serif;
+
+    // Font Weight
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semi-bold: 600;
+    --fw-bold: 700;
+
+    // Font Size
+    --fs-h1-sm: 2.222rem;
+    --fs-h1-lg: 2.222rem;
+    --fs-h2: 1.777rem;
+    --fs-h3: 1rem;
+    --fs-body-1: .83333rem;
+    --fs-body-2: .83333rem;
+
+    --fs-sm: .7222rem;
+    --fs-normal: 1rem;
+    --fs-md: 1.5rem;
+    --fs-lg: 1.777rem;
+    --fs-xl: 2rem;
+    --fs-xxl: 2.5rem;
+    --fs-xxxl: 3rem;
+
+    @include breakpoint-up(medium){
+        --fs-h1-sm: 3.555rem;
+        --fs-h1-lg: 3.555rem;
+        --fs-h2: 1.777rem;
+        --fs-h3: 1rem;
+        --fs-body-1: .83333rem;
+        --fs-body-2: .83333rem;
+
+        --fs-sm: .7222rem;
+        --fs-normal: 1rem;
+        --fs-md: 1.5rem;
+        --fs-lg: 1.777rem;
+        --fs-xl: 2rem;
+        --fs-xxl: 3rem;
+        --fs-xxxl: 5rem;
+    }
+
+    @include breakpoint-up(large){
+        --fs-h1-sm: 3.555rem;
+        --fs-h1-lg: 5.555rem;
+        --fs-h2: 2.6667rem;
+        --fs-h3: 1rem;
+        --fs-body-1: 1rem;
+        --fs-body-2: .83333rem;
+
+        --fs-sm: .7222rem;
+
+    }
+
+    // Line Height
+    --lh-h1-sm: 2.2222rem;
+    --lh-h1-lg: 2.2222rem;
+    --lh-h2: 1.7777rem;
+    --lh-h3: 1.55556rem;
+    --lh-body1: 1.5556rem;
+    --lh-body2: 1.388889rem;
+    --lh-sm: 1rem;
+    --lh-lg: 2.6667rem;
+
+    @include breakpoint-up(medium){
+        --lh-h1-sm: 3.1111rem;
+        --lh-h1-lg: 5.555rem;
+        --lh-h2: 1.777rem;
+        --lh-h3: 1.5556rem;
+        --lh-body1: 1.5556rem;
+        --lh-body2: 1.388889rem;
+    }
+
+    @include breakpoint-up(large){
+        --lh-h2: 2.6667rem;
+    }
+}
+
+body{
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-semi-bold);
+    font-size: var(--fs-body-2);
+    line-height: var(--lh-body2);
+    color: var(--color-text);
+}
+
+.heading{
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-bold);
+
+    &--1-small{
+        font-size: var(--fs-h1-sm);
+        line-height: var(--lh-h1-sm);
+    }
+    &--1-large{
+        font-size: var(--fs-h1-lg);
+        line-height: var(--lh-h1-lg);
+    }
+    &--2{
+        font-size: var(--fs-h2);
+        line-height: var(--lh-h2);
+    }
+    &--3{
+        font-size: var(--fs-h3);
+        line-height: var(--lh-h3);
+    }
+}
+
+.text-sm,
+small{
+    font-size: var(--fs-sm);
+    line-height: var(--lh-sm);
+}
+
+em{
+    font-weight: var(--fw-medium);
+}
+
+.text-md{
+    font-size: var(--fs-md);
+}
+
+.text-lg{
+    font-size: var(--fs-lg);
+    line-height: var(--lh-lg);
+}
+
+.text-xl{
+    font-size: var(--fs-xl);
+}
+
+.text-xxl{
+    font-size: var(--fs-xxl);
+}
+
+.text-xxxl{
+    font-size: var(--fs-xxxl);
+}
+
+.text-body-1{
+    font-size: var(--fs-body-1);
+    line-height: var(--lh-body1);
+}
+
+.text-bold{
+    font-weight: var(--fw-bold);
+}
+
+.text-italic{
+    font-style: italic;
+}

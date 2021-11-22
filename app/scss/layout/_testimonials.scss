@@ -1,0 +1,60 @@
+/*
+    ------------------------
+    ----- Testimonials -----
+    ------------------------
+*/
+
+.testimonials{
+    background-color: var(--color-bg-green-dark);
+
+    // Mobile Styles
+
+    padding: var(--space-8xl) 0;
+    text-align: center;
+
+    &__header{
+        margin-bottom: var(--space-2xl);
+    }
+
+    &__list{
+        >*:not(:last-child){
+            margin-bottom: var(--space-2xl);
+        }
+    }
+
+    // Tablet Styles
+
+    @include breakpoint-up(medium){
+        padding: calc(var(--space-7xl) * .84) 0;
+    }
+
+    // Desktop Styles
+
+    @include breakpoint-up(large){
+        padding: var(--space-8xl) 0;
+
+        .wrapper{
+            padding-bottom: .5rem;
+        }
+
+        &__header{
+            margin: 0 auto;
+            margin-bottom: var(--space-3xl);
+            max-width: 51.7778rem;
+        }
+
+        &__list{
+
+            >*:not(:last-child){
+                margin-bottom: initial;
+            }
+
+            @include flex(sb, c, row);
+        }
+
+        &__item{
+            max-width: 19.444rem;
+        }
+    }
+
+}

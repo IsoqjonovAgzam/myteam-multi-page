@@ -1,0 +1,66 @@
+/*
+    ------------------------
+    ------- Clients --------
+    ------------------------
+*/
+
+.clients{
+
+    background-color: var(--color-bg-green-very-dark);
+
+    // Mobile Styles
+
+    padding: 88px 0;
+    text-align: center;
+
+    &__header{
+        margin-bottom: var(--space-4xl);
+    }
+
+    &__list{
+        >*:not(:last-child){
+            margin-bottom: var(--space-3xl);
+        }
+    }
+
+    &__item{
+        max-width: var(--space-9xl);
+        margin: 0 auto;
+    }
+
+    // Tablet Styles
+
+    @include breakpoint-up(medium){
+        padding: 100px 0;
+
+        &__header{
+            margin-bottom: var(--space-2xl);
+        }
+
+        &__list{
+
+            @include flex(sb, c, row);
+
+            >*:not(:last-child){
+                margin-bottom: initial;
+                margin-right: var(--space-2xl);
+            }
+        }
+    }
+    
+    // Desktop Styles
+
+    @include breakpoint-up(large){
+        padding: var(--space-8xl) 0;
+
+        &__header{
+            margin-bottom: var(--space-4xl);
+        }
+
+        &__list{
+            >*:not(:last-child){
+                margin-right: 54px;
+            }
+        }
+    }
+}

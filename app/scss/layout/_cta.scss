@@ -1,0 +1,32 @@
+/*
+    ------------------------
+    --------- CTA ----------
+    ------------------------
+*/
+
+.cta{
+    background-color: var(--color-bg-coral);
+
+    // Mobile Styles
+    text-align: center;
+    padding: var(--space-5xl) 0;
+
+    &__header{
+        margin-bottom: var(--space-md);
+    }
+
+    // Tablet Styles
+
+    @include breakpoint-up(medium){
+        @include flex(sa, c, row);
+
+        &__header{
+            margin-bottom: initial;
+        }
+    }
+
+    // Desktop Styles
+    @include breakpoint-up(large){
+        padding: 76px 0;
+    }
+}

@@ -1,0 +1,30 @@
+/*
+    ------------------------
+    ------- Social ---------
+    ------------------------
+*/
+
+.social{
+    @include flex(c, c, row);
+    
+    & > *:not(:last-child){
+        margin-right: 1rem;
+    }
+    
+    &__item{
+
+        &:hover{
+            svg{
+                path{
+                    fill: var(--color-icon-hover);
+                }
+            }
+        }
+    }
+
+    // Media Queries
+
+    @include breakpoint-up(large){
+        justify-content: flex-start;
+    }
+}

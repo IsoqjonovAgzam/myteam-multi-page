@@ -1,0 +1,70 @@
+/*
+    ------------------------
+    ------- Buttons --------
+    ------------------------
+*/
+
+.btn{
+    display: inline-block;
+    padding: .38889rem 1.6667rem;
+    border-width: .1111rem;
+    border-style: solid;
+    border-radius: var(--space-md);
+    font-weight: var(--fw-semi-bold);
+    font-size: var(--fs-normal);
+    line-height: var(--lh-body1);
+
+    &--primary-light{
+        background-color: var(--color-btn-primary-light-bg);
+        color: var(--color-btn-primary-light-text);
+        border-color: var(--color-btn-primary-light-border);
+
+        &:hover{
+            background-color: var(--color-btn-primary-light-bg-hover);
+            color: var(--color-btn-primary-light-text-hover);
+            border-color: var(--color-btn-primary-light-border-hover);
+        }
+
+        &:disabled{
+            background-color: var(--color-btn-primary-light-bg-disabled);
+            color: var(--color-btn-primary-light-text-disabled);
+            border-color: var(--color-btn-primary-light-border-disabled);
+        }
+    }
+
+    &--primary-dark{
+        background-color: var(--color-btn-primary-dark-bg);
+        color: var(--color-btn-primary-dark-text);
+        border-color: var(--color-btn-primary-dark-border);
+
+        &:hover{
+            background-color: var(--color-btn-primary-dark-bg-hover);
+            color: var(--color-btn-primary-dark-text-hover);
+            border-color: var(--color-btn-primary-dark-border-hover);
+        }
+
+        &:disabled{
+            background-color: var(--color-btn-primary-dark-bg-disabled);
+            color: var(--color-btn-primary-dark-text-disabled);
+            border-color: var(--color-btn-primary-dark-border-disabled);
+        }
+    }
+
+    &--secondary{
+        background-color: var(--color-btn-secondary-light-bg);
+        color: var(--color-btn-secondary-light-text);
+        border-color: var(--color-btn-secondary-light-border);
+
+        &:hover{
+            background-color: var(--color-btn-secondary-light-bg-hover);
+            color: var(--color-btn-secondary-light-text-hover);
+            border-color: var(--color-btn-secondary-light-border-hover);
+        }
+
+        &:disabled{
+            background-color: var(--color-btn-secondary-light-bg-disabled);
+            color: var(--color-btn-secondary-light-text-disabled);
+            border-color: var(--color-btn-secondary-light-border-disabled);
+        }
+    }
+}

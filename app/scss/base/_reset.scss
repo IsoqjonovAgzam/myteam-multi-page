@@ -1,0 +1,57 @@
+/*
+    ------------------------
+    ------- Resets ---------
+    ------------------------
+*/
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+body{
+
+}
+
+ul{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img{
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+button,
+input,
+textarea{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-family: inherit;
+}
+
+input,
+textarea{
+    display: block;
+    width: 100%;
+}
+
+address{
+    font-style: normal;
+}

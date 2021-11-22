@@ -1,0 +1,52 @@
+/*
+    ------------------------
+    ------- Profile --------
+    ------------------------
+*/
+
+.profile{
+
+    // Mobile Styles
+
+    position: relative;
+    text-align: center;
+    background-color: var(--color-profile-bg-light);
+    padding: var(--space-lg) var(--space-md) var(--space-3xl);
+    overflow-x: hidden;
+    overflow-y: visible;
+    max-width: 350px;
+    margin: 0 auto;
+
+    &__img{
+        margin: 0 auto var(--space-sm);
+        width: 96px;
+        height: 96px;
+        border-radius: 50%;
+        border: var(--space-xxxs) solid var(--color-rapture-blue-light);
+    }
+
+    &__hidden-container{
+        background-color: var(--color-profile-bg-dark);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 100%;
+        bottom: 0;
+        padding: var(--space-lg) var(--space-md) var(--space-3xl);
+        transition: all .35s ease-out;
+
+        .heading{
+            margin-bottom: var(--space-xs);
+        }
+
+        .social{
+            justify-content: center;
+        }
+    }
+
+    &__quote{
+        margin-bottom: var(--space-md);
+    }
+
+}

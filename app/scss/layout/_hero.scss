@@ -1,0 +1,62 @@
+/*
+    ------------------------
+    --------- Hero ---------
+    ------------------------
+*/
+
+.hero{
+
+    background-color: var(--color-bg-green-light);
+
+    // Mobile Styles
+    text-align: center;
+    padding: var(--space-lg) 0 var(--space-11xl);
+    
+    &__header{
+        margin-bottom: var(--space-base);
+    }
+
+    .line-on-top{
+        &::before{
+            display: none;
+        }
+    }
+
+    // Tablet Styles
+
+    @include breakpoint-up(medium){
+        padding: var(--space-md) 0 256px;
+
+        &__header{
+            margin-bottom: var(--space-md);
+        }
+    }
+    
+    // Desktop Styles
+
+    @include breakpoint-up(large){
+        padding: 60px 0 250px;
+        text-align: left;
+
+        &__text-container{
+            @include flex(sb, c, row);
+        }
+
+        &__header{
+            margin-bottom: initial;
+            margin-right: var(--space-8xl);
+            flex-shrink: 0;
+            flex-grow: 1;
+        }
+
+        .paragraph{
+            padding-top: 79px;
+        }
+
+        .line-on-top{
+            &::before{
+                display: block;
+            }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+/*
+    ------------------------
+    ------- Feature --------
+    ------------------------
+*/
+
+.feature{
+
+    // Mobile Styles
+
+    &__icon{
+        margin: 0 auto var(--space-sm);
+        width: 4rem;
+        height: 4rem;
+        flex-shrink: 0;
+    }
+
+    &__text-container{
+        text-align: center;
+
+        .heading{
+            margin-bottom: var(--space-xs);
+        }
+    }
+
+    // Tablet & Desktop Styles
+    @include breakpoint-up(medium){
+
+        @include flex(fs, c, row);
+
+        &__icon{
+            margin: initial;
+            margin-right: var(--space-md);
+        }
+    
+        &__text-container{
+            text-align: initial;
+    
+            .heading{
+                margin-bottom: var(--space-sm);
+            }
+        }
+    }
+}

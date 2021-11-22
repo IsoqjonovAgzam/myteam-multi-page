@@ -1,0 +1,60 @@
+/*
+    ------------------------
+    ------ Utilities -------
+    ------------------------
+*/
+
+// Visibilty Classes
+
+.hide-for-desktop{
+    @include breakpoint-up(medium){
+        display: none !important;
+    }
+}
+
+.hide-for-mobile{
+    @include breakpoint-down(small){
+        display: none !important;
+    }
+}
+
+.show-mobile-menu{
+    right: 0 !important;
+}
+
+.show-hidden-container{
+    left: 0 !important;
+}
+
+.rotate-45deg{
+    &::before{
+        transform: rotate(45deg);
+    }
+}
+
+// Aesthetic
+
+.line-on-top{
+    position: relative;
+    &::before{
+        content: '';
+        display: block;
+        width: 50px;
+        height: 4px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    &--green{
+        &::before{
+            background-color: #79C8C7;
+        }
+    }
+
+    &--coral{
+        &::before{
+            background-color: #F67E7E;
+        }
+    }
+}

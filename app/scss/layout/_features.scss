@@ -1,0 +1,60 @@
+/*
+    ------------------------
+    ------- Features -------
+    ------------------------
+*/
+
+.features{
+
+    background-color: var(--color-bg-green-very-dark);
+
+    // Mobile Styles
+
+    padding: var(--space-4xl) 0;
+
+    &__header{
+        padding-top: var(--space-lg);
+        margin-bottom: var(--space-3xl);
+        max-width: 13.3333rem;
+    }
+
+    &__list{
+        >*:not(:last-child){
+            margin-bottom: var(--space-2xl);
+        }
+    }
+
+    // Tablet Styles
+
+    @include breakpoint-up(medium){
+        padding: 5.55556rem 0;
+
+        &__header{
+            max-width: initial;
+        }
+
+        &__list{
+            >*:not(:last-child){
+                margin-bottom: var(--space-lg);
+            }
+        }
+
+    }
+
+    // Desktop Styles
+
+    @include breakpoint-up(large){
+        @include flex(sb, fs, row);
+        padding: var(--space-8xl) 0;
+
+        &__header{
+            padding-top: 3rem;
+            max-width: 23.05556rem;
+            margin-right: 8.7222rem;
+        }
+
+        &__list{
+            padding-top: 3rem;
+        }
+    }
+}

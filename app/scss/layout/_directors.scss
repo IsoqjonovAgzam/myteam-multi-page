@@ -1,0 +1,96 @@
+/*
+    ------------------------
+    ------ Directors -------
+    ------------------------
+*/
+
+.directors{
+
+    background-color: var(--color-bg-green-dark);
+
+    // Mobile Styles
+
+    padding: 88px 0 116px;
+    text-align: center;
+
+    &__header{
+        margin-bottom: var(--space-2xl);
+    }
+
+    &__list{
+        >*:not(:last-child){
+            margin-bottom: var(--space-3xl);
+        }
+    }
+
+    &__item{
+        position: relative;
+    }
+
+    &__toggle{
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background-color: var(--color-profile-btn-bg-open);
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: calc((56px / 2) * -1);
+        margin: 0 auto;
+
+        &::before{
+            content: '';
+            width: 16px;
+            height: 16px;
+            background-image: url(../../../images/icon-cross.svg);
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            transition: transform .2s ease-in-out;
+        }
+    }
+
+    // Tablet Styles
+
+    @include breakpoint-up(medium){
+
+        padding: 100px 0  var(--space-7xl);
+
+        &__header{
+            margin-bottom: var(--space-2xl);
+        }
+
+        &__list{
+
+            >*:not(:last-child){
+                margin-bottom: initial;
+            }
+
+            display: grid;
+            grid-template-columns: repeat(2, 281px);
+            column-gap: 11px;
+            row-gap: 76px;
+            justify-content: center;
+        }
+    }
+
+    // Desktop Styles
+
+    @include breakpoint-up(large){
+
+        padding: var(--space-8xl) 0;
+
+        &__header{
+            margin-bottom: var(--space-4xl);
+        }
+        
+        &__list{
+            grid-template-columns: repeat(3, minmax(auto, 350px));
+            column-gap: 30px;
+        }
+    }
+
+}

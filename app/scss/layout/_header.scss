@@ -1,0 +1,117 @@
+/*
+    ------------------------
+    ------- Header --------
+    ------------------------
+*/
+
+.header{
+
+    // Mobile Styles
+    background-color: var(--color-bg-green-light);
+    padding: var(--space-2xl) 0;
+
+    .nav{
+        position: relative;
+
+        @include flex(sb, c, row);
+
+        &__logo{
+            display: block;
+            max-width: 8.8889rem;
+        }
+
+        &__menu{
+            @include breakpoint-down(small){
+                background-color: var(--color-police-blue);
+                position: fixed;
+                right: -80%;
+                top: 0;
+                width: 80%;
+                height: 100%;
+                z-index: var(--z-fixed);
+                padding: var(--space-3xl) var(--space-md) 0 var(--space-2xl);
+                transition: all .35s ease-in-out;
+
+                .nav__toggle{
+                    width: 1rem;
+                    height: .94444rem;
+                    background-image: url(../../../images/icon-close.svg);
+                    margin: 0 0 var(--space-xl) auto;
+                    display: block;
+                }
+
+                .btn{
+                    margin-top: var(--space-lg);
+                }
+
+                .shape{
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                }
+            }
+        }
+
+        &__item{
+            &:not(:last-of-type){
+                margin-bottom: var(--space-md);
+            }
+
+            &:hover{
+                color: var(--color-link-hover);
+            }
+        }
+
+        &__toggle{
+            background-image: url(../../../images/icon-hamburger.svg);
+            width: 1.1111rem;
+            height: .94444rem;
+        }
+    }
+
+    // Tablet Styles
+
+    @include breakpoint-up(medium){
+
+        @include flex(sb, c, row);
+        padding: var(--space-4xl) 0;
+
+        .nav{
+            @include flex(fs, c, row);
+
+            &__logo{
+                margin-right: var(--space-2xl);
+            }
+
+            &__menu{
+                @include flex(fs, c, row);
+
+                .shape{
+                    display: none;
+                }
+            }
+
+            &__item{
+                &:not(:last-of-type){
+                    margin-bottom: initial;
+                    margin-right: var(--space-xl);
+                }
+            }
+
+        }
+    }
+
+    // Desktop Styles
+
+    @include breakpoint-up(large){
+
+        padding: 4.05556rem 0;
+
+        .nav{
+
+            &__logo{
+                margin-right: var(--space-5xl);
+            }
+        }
+    }
+}

@@ -1,0 +1,80 @@
+/*
+    ------------------------
+    ----- Testimonial ------
+    ------------------------
+*/
+
+.testimonial{
+
+    // Mobile Styles
+    text-align: center;
+
+    &__quote{
+        padding-top: 2rem;
+        margin-bottom: var(--space-sm);
+        position: relative;
+        z-index: var(--z-tooltip);
+
+        &::before{
+            content: '';
+            display: block;
+            width: 3.7222rem;
+            height: 3.1111rem;
+            background-image: url(../../../images/icon-quotes.svg);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            z-index: var(--z-back);
+        }
+    }
+
+    &__author{
+        >*:not(:last-child){
+            margin-bottom: var(--space-sm);
+        }
+    }
+
+    &__author-position{
+        display: block;
+    }
+
+    &__img{
+        margin: 0 auto;
+        width: 3.6667rem;
+        height: 3.6667rem;
+        border-radius: 50%;
+        border: var(--space-xxxs) solid var(--color-rapture-blue-light);
+    }
+
+    // Tablet Styles
+
+    @include breakpoint-up(medium){
+        &__quote{
+            margin-bottom: var(--space-sm);
+        }
+    
+        &__author{
+            >*:not(:last-child){
+                margin-bottom: var(--space-xxxs);
+            }
+        }
+    
+        &__img{
+            margin-top: var(--space-sm);
+        }
+    }
+
+    // Desktop Styles
+
+    @include breakpoint-up(large){
+        &__quote{
+            margin-bottom: var(--space-md);
+        }
+
+        &__img{
+            margin-top: var(--space-lg);
+        }
+    }
+}

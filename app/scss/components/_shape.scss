@@ -1,0 +1,109 @@
+/*
+    ------------------------
+    ------- Shape ----------
+    ------------------------
+*/
+
+.shape{
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    &--home{
+        &-1{
+            background-image: url(../../../images/bg-pattern-home-1.svg);
+            width: 200px;
+            height: 200px;
+        }
+        &-2{
+            background-image: url(../../../images/bg-pattern-home-2.svg);
+            width: 358px;
+            height: 100px;
+        }
+        &-3{
+            background-image: url(../../../images/bg-pattern-home-3.svg);
+            background-position-x: 100px;
+            width: 200px;
+            height: 244px;
+        }
+        &-4{
+            background-image: url(../../../images/bg-pattern-home-4-about-3.svg);
+            width: 147px;
+            height: 100px;
+        }
+        &-5{
+            background-image: url(../../../images/bg-pattern-home-5.svg);
+            width: 200px;
+            height: 100px;
+        }
+        &-6{
+            background-image: url(../../../images/bg-pattern-home-6-about-5.svg);
+            width: 200px;
+            height: 122px;
+        }
+    }
+    
+    &--about{
+        &-1{
+            background-image: url(../../../images/bg-pattern-about-1-mobile-nav-1.svg);
+            background-position: 100px 100px;
+            width: 200px;
+            height: 200px;
+        }
+        &-2{
+            background-image: url(../../../images/bg-pattern-about-2-contact-1.svg);
+            background-position: -100px -100px;
+            width: 200px;
+            height: 200px;
+        }
+        &-3{
+            background-image: url(../../../images/bg-pattern-home-4-about-3.svg);
+            width: 147px;
+            height: 100px;
+        }
+        &-4{
+            background-image: url(../../../images/bg-pattern-about-4.svg);
+            background-position: -100px -100px;
+            width: 200px;
+            height: 200px;
+
+            @include breakpoint-up(medium){
+                background-position-x: 0;
+            }
+
+            @include breakpoint-up(large){
+                background-position-y: 0;
+            }
+        }
+        &-5{
+            background-image: url(../../../images/bg-pattern-home-6-about-5.svg);
+            width: 200px;
+            height: 122px;
+        }
+    }
+    
+    &--contact{
+        &-1{
+            background-image: url(../../../images/bg-pattern-about-2-contact-1.svg);
+            background-position-x: -100px;
+            width: 200px;
+            height: 200px;
+        }
+        &-2{
+            background-image: url(../../../images/bg-pattern-contact-2.svg);
+            background-position: 140px 100px;
+            width: 225px;
+            height: 200px;
+
+            @include breakpoint-up(medium){
+                background-position-y: 0;
+            }
+        }
+    }
+
+    &--menu{
+        background-image: url(../../../images/bg-pattern-about-1-mobile-nav-1.svg);
+        background-position-x: 100px;
+        width: 200px;
+        height: 200px;
+    }
+}

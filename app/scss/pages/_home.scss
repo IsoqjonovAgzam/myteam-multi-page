@@ -1,0 +1,91 @@
+/*
+    ------------------------
+    -------- Home ----------
+    ------------------------
+*/
+
+.main{
+    &--home{
+        .hero,
+        .features,
+        .testimonials,
+        .cta{
+            position: relative;
+        }
+
+
+        // Mobile Styles
+        .shape{
+            position: absolute;
+            
+            &--home-1{
+                display: none;
+            }
+
+            &--home-2{
+                right: 0;
+                bottom: 0;
+            }
+
+            &--home-3{
+                top: 0;
+                right: 0;
+            }
+
+            &--home-4{
+                top: 0;
+                left: 0;
+            }
+
+            &--home-5{
+                right: 0;
+                bottom: 0;
+            }
+
+            &--home-6{
+                left: 0;
+                bottom: 0;
+            }
+        }
+
+        // Tablet Styles
+        @include breakpoint-up(medium){
+            .shape{
+                &--home-2{
+                    right: 0;
+                    left: 0;
+                    bottom: 0;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        // Desktop Styles
+        @include breakpoint-up(large){
+            .shape{
+
+                &--home-2{
+                    margin: initial;
+                    left: initial;
+                    right: var(--space-9xl);
+                }
+            }
+        }
+
+        @include breakpoint-up(xlarge){
+            .shape{
+
+                &--home-1{
+                    display: block;
+                    top: 60px;
+                    left: -100px;
+                }
+
+                &--home-3{
+                    top: initial;
+                    bottom: 0;
+                }
+            }
+        }
+    }
+}

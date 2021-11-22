@@ -1,0 +1,131 @@
+/*
+    ------------------------
+    ------- Colors ---------
+    ------------------------
+*/
+
+:root{
+    // Primary
+    --color-midnight-green: #014E56;
+    --color-light-coral: #F67E7E;
+    --color-light-coral-light: rgba(246, 126, 126,.6);
+    --color-white: #FFF;
+    --color-white-light: rgba(255,255,255,.8);
+    --color-white-very-light: rgba(255,255,255,.6);
+    --color-white-extreme-light: rgba(255,255,255,.25);
+
+    // Secondary
+    --color-rapture-blue: #79C8C7;
+    --color-rapture-blue-light: #C4FFFE;
+    --color-police-blue: #2C6269;
+    --color-deep-jungle-green: #004047;
+    --color-sacramento-green: #012F34;
+    --color-dark-green: #002529;
+
+    // Text
+    --color-text: var(--color-white);
+    --color-text-white-light: var(--color-white-light);
+    --color-text-white-very-light: var(--color-white-very-light);
+    --color-text-white-extreme-light: var(--color-white-extreme-light);
+
+    // Backgrounds
+    --color-bg-green-light: var(--color-midnight-green);
+    --color-bg-green-dark: var(--color-deep-jungle-green);
+    --color-bg-green-very-dark: var(--color-sacramento-green);
+    --color-bg-coral: var(--color-light-coral);
+
+    // Profile Card
+    --color-profile-bg-light: var(--color-sacramento-green);
+    --color-profile-bg-dark: var(--color-dark-green);
+    --color-profile-btn-bg-open: var(--color-light-coral);
+    --color-profile-btn-bg-close: var(--color-rapture-blue);
+
+    // Form
+    --color-input-text-normal: var(--color-white-very-light);
+    --color-input-text-active: var(--color-white);
+    --color-input-text-error: var(--color-light-coral-light);
+
+    --color-input-border-normal: var(--color-white);
+    --color-input-border-active: var(--color-rapture-blue);
+    --color-input-border-error: var(--color-light-coral);
+
+    // Buttons - Primary
+    --color-btn-primary-light-bg: transparent;
+    --color-btn-primary-dark-bg: transparent;
+
+    --color-btn-primary-light-text: var(--color-white);
+    --color-btn-primary-dark-text: var(--color-sacramento-green);
+
+    --color-btn-primary-light-border: var(--color-white);
+    --color-btn-primary-dark-border: var(--color-sacramento-green);
+
+    // Buttons - Primary - Hover
+    --color-btn-primary-light-bg-hover: var(--color-white);
+    --color-btn-primary-dark-bg-hover: var(--color-sacramento-green);
+
+    --color-btn-primary-light-text-hover: var(--color-dark-green);
+    --color-btn-primary-dark-text-hover: var(--color-white);
+
+    --color-btn-primary-light-border-hover: var(--color-white);
+    --color-btn-primary-dark-border-hover: var(--color-sacramento-green);
+
+    // Buttons - Primary - Disabled
+    --color-btn-primary-light-bg-disabled: transparent;
+    --color-btn-primary-dark-bg-disabled: transparent;
+
+    --color-btn-primary-light-text-disabled: var(--color-white-extreme-light);
+    --color-btn-primary-dark-text-disabled: var(--color-white-extreme-light);
+
+    --color-btn-primary-light-border-disabled: var(--color-white-extreme-light);
+    --color-btn-primary-dark-border-disabled: var(--color-white-extreme-light);
+
+    // Buttons - Secondary
+    --color-btn-secondary-light-bg: var(--color-white);
+
+    --color-btn-secondary-light-text: var(--color-dark-green);
+
+    --color-btn-secondary-light-border: var(--color-white);
+
+    // Buttons - Secondary - Hover
+    --color-btn-secondary-light-bg-hover: var(--color-rapture-blue);
+
+    --color-btn-secondary-light-text-hover: var(--color-dark-green);
+
+    --color-btn-secondary-light-border-hover: var(--color-rapture-blue);
+
+    // Buttons - Secondary - Disabled
+    --color-btn-secondary-light-bg-disabled: var(--color-white-extreme-light);
+
+    --color-btn-secondary-light-text-disabled: var(--color-dark-green);
+
+    --color-btn-secondary-light-border-disabled: var(--color-white-extreme-light);
+
+    // Icon Hover
+    --color-icon-hover: var(--color-light-coral);
+
+    // Link Hover
+    --color-link-hover: var(--color-light-coral);
+
+}
+
+.text-white-light{
+    color: var(--color-text-white-light);
+}
+.text-white-very-light{
+    color: var(--color-white-very-light);
+}
+.text-white-extreme-light{
+    color: var(--color-white-extreme-light);
+}
+.text-rapture-blue{
+    color: var(--color-rapture-blue);
+}
+.text-light-coral{
+    color: var(--color-light-coral);
+}
+.text-sacramento-green{
+    color: var(--color-sacramento-green);
+}
+.bg-rapture-blue{
+    background-color: var(--color-rapture-blue) !important;
+}
